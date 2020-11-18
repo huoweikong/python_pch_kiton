@@ -8,3 +8,4 @@ for i in range(1, 100+1):
 a = input("按任意键结束")
 print("我改了，要同步了")
 print("fsdf")
+print('sdfhs')
