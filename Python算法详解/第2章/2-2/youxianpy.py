@@ -1,4 +1,6 @@
 import heapq
+
+
 class PriorityQueue:
     def __init__(self):
         self._queue = []
@@ -11,6 +13,7 @@ class PriorityQueue:
     def pop(self):
         return heapq.heappop(self._queue)[-1]
 
+
 class Item:
     def __init__(self, name):
         self.name = name
@@ -18,11 +21,12 @@ class Item:
     def __repr__(self):
         return 'Item({!r})'.format(self.name)
 
+
 q = PriorityQueue()
 q.push(Item('AAA'), 1)
 q.push(Item('BBB'), 4)
 q.push(Item('CCC'), 5)
 q.push(Item('DDD'), 1)
-print(q.pop())
+print(q.pop())  # 将优先级低的先推出
 print(q.pop())
 print(q.pop())

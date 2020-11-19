@@ -1,7 +1,8 @@
 nums = [1, 2, 3, 4, 5]
-s = sum( x*x for x in nums )
+s = sum(x * x for x in nums)
 print(s)
 import os
+
 files = os.listdir('.idea')
 if any(name.endswith('.py') for name in files):
     print('这是一个Python文件!')
